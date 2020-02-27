@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.color {
+  color: #EF4056;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  color: rgba(33, 37, 39, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container h1 {
+  font-size: 28px;
+  padding: 10px 0;
+}
+
+#container select {
+  cursor: pointer;
+  border-radius: 5px 50px 50px 5px;
+  margin: 25px;
+  width: 130px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 1px solid #CCC;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  font-weight: lighter;
+}
+
+#container select:focus {
+  border: 1px solid #EF4056;
+}
+
+#container select::-ms-expand {
+  display: none;
+}
+
+#container button {
+  cursor: pointer;
+  border: none;
+  background-color: #EF4056;
+  padding: 10px 0;
+  width: 200px;
+  outline: none;
+  border-radius: 5px;
+  color: #f2f2f2;
+  font-weight: 600;
+  font-size: 15px;
+  -webkit-transition: background-color .1s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+  transition: background-color .1s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+  transition: background-color .1s ease-in-out, box-shadow .2s ease-in-out;
+  transition: background-color .1s ease-in-out, box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+}
+
+#container button:hover {
+  background-color: #e1132d;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+#container table {
+  width: 90%;
+  margin: 50px 0;
+  font-size: 18px;
+  text-align: center;
+  border-collapse: collapse;
+  color: rgba(33, 37, 39, 0.9);
+}
+
+#container table tr:nth-child(1) th:nth-child(1) {
+  color: #EF4056;
+}
+
+#container table td,
+#container table th {
+  border: 1px solid rgba(33, 37, 39, 0.15);
+  padding: 8px;
+}
+
+#container table td {
+  color: rgba(33, 37, 39, 0.75);
+}
+
+#container table tr td {
+  padding: 15px 0 25px 0;
+}
+
+@media screen and (min-width: 0\0) {
+  select {
+    background: none\9;
+    padding: 5px\9;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,126 @@
+$main: #EF4056; // #FF2B5B;
+$white: #f2f2f2;
+$black: rgba($color: #212527, $alpha: .9);
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color {
+    color: $main;
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: $white;
+    height: 100vh;
+}
+
+//! section 1
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    color: $black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 28px;
+        padding: 10px 0;
+    }
+
+    select {
+        cursor: pointer;
+        border-radius: 5px 50px 50px 5px;
+        margin: 25px;
+        width: 130px;
+        padding: 5px 35px 5px 5px;
+        font-size: 16px;
+        border: 1px solid #CCC;
+        height: 34px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        font-weight: lighter;
+
+        &:focus {
+            border: 1px solid $main;
+        }
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+
+    button {
+        cursor: pointer;
+        border: none;
+        background-color: $main;
+        padding: 10px 0;
+        width: 200px;
+        outline: none;
+        border-radius: 5px;
+        color: $white;
+        font-weight: 600;
+        font-size: 15px;
+        transition: background-color .1s ease-in-out, box-shadow .2s ease-in-out;
+
+        &:hover {
+            background-color: #e1132d;
+            box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: .15);
+        }
+    }
+
+    table {
+        width: 90%;
+        margin: 50px 0;
+        font-size: 18px;
+        text-align: center;
+        border-collapse: collapse;
+        color: $black;
+        // border: 2px solid $main;
+
+        tr:nth-child(1) th:nth-child(1) {
+            color: $main;
+        }
+
+        td,
+        th {
+            border: 1px solid rgba($color: #212527, $alpha: .15);
+            padding: 8px;
+        }
+
+        td {
+            color: rgba($color: #212527, $alpha: .75);
+        }
+
+        tr td {
+            padding: 15px 0 25px 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+//! does not matter at all
+@media screen and (min-width:0\0) {
+    select {
+        background: none\9;
+        padding: 5px\9;
+    }
+}
