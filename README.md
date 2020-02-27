@@ -1,4 +1,4 @@
-# Chord information
+# Chord information (2020)
 you can see some of the chords degrees, and what they mean in someway
 
 ## example
