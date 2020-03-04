@@ -11,11 +11,11 @@
 
 <body>
     <div id="container">
-        <h1>Informação sobre <span class="color">acordes</span></h1>
-        <p id="p"><span class="color">Escolha</span> o acorde que você quer usar</p>
+        <h1>Chord <span class="color">information</span></h1>
+        <p id="p"><span class="color">Choose</span> the chord you wanna use</p>
 
         <select id="chord--selector" onchange="checkSelectValue()">
-            <option value="" disabled selected>Selecione</option>
+            <option value="" disabled selected>Select</option>
             <option value="C">C</option>
             <option value="C#">C#</option>
             <option value="D">D</option>
@@ -30,32 +30,28 @@
             <option value="B">B</option>
         </select>
 
-        <button id="chord--check">Ver informações</button>
+        <button id="chord--check">See informations</button>
 
         <table id="tablebody">
             <tr>
-                <th>Acorde</th>
-                <th>Diminuto</th>
-                <th>Tensão</th>
-                <th>Clareza</th>
-                <th>Medo</th>
+                <th>Chord</th>
+                <th>Diminished</th>
+                <th>Tension</th>
+                <th>Clarity</th>
+                <th>Fear</th>
             </tr>
 
             <tr id="first-row"></tr>
 
             <tr>
-                <th>Suspense de transição</th>
+                <th>Transition suspense</th>
                 <th>Suspense</th>
-                <th>Transição de baixo</th>
-                <th>Emoção</th>
-                <th>Transição</th>
+                <th>Bass transition</th>
+                <th>Emotion</th>
+                <th>Transition</th>
             </tr>
 
             <tr id="second-row"></tr>
-
-            <!-- <tr> <th colspan="5">Tensão que combina com a música</th> </tr> -->
-
-            <!-- <tr id="third-row"></tr> -->
         </table>
     </div>
 
