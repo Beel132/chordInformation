@@ -1,14 +1,3 @@
-//! acordes
-
-//* Diminuto
-//* Tensão
-//* Clareza
-//* Medo
-//* Transição
-//* Suspense de transição
-//* Suspense
-//* transição de baixo
-
 const newTD = document.createElement('td');
 
 add = (e, ev, f) => e.addEventListener(ev, f);
@@ -47,7 +36,7 @@ add(button, 'click', () => {
     clear();
 
     if (!selectedValue)
-        alert('selecione um acorde!');
+        alert('select a chord!');
     else {
 
         for (let i = 0; i < len; i++) {
@@ -67,7 +56,7 @@ add(button, 'click', () => {
                 createTD1(chord);
 
                 //! tensão
-                chord = `${chords[4]}m ou ${chords[0]}m`;
+                chord = `${chords[4]}m or ${chords[0]}m`;
                 createTD1(chord);
 
                 //! clareza
@@ -79,7 +68,7 @@ add(button, 'click', () => {
                 createTD1(chord);
 
                 //! suspense de transição
-                chord = `${chords[4]} com baixo em ${chords[8]}`;
+                chord = `${chords[4]} with ${chords[8]} on the bass`;
                 createTD2(chord);
 
                 //! suspense
@@ -87,7 +76,7 @@ add(button, 'click', () => {
                 createTD2(chord);
 
                 //! transição de baixo
-                chord = `${chords[0]} com baixo em ${chords[4]}`;
+                chord = `${chords[0]} with ${chords[4]} on the bass`;
                 createTD2(chord);
 
                 //! emoção
@@ -95,12 +84,8 @@ add(button, 'click', () => {
                 createTD2(chord);
 
                 //! transição
-                chord = `${chords[7]} com baixo em ${chords[11]}`;
+                chord = `${chords[7]} with ${chords[11]} on the bass`;
                 createTD2(chord);
-
-                /* // // Tensão que combina com a música
-                chord = `${chords[5]}m seguido de ${chords[9]}m`;
-                createTD3(chord); */
 
                 break;
             }
@@ -130,27 +115,12 @@ function createTD2(x) {
     secondRow.appendChild(newTD);
 }
 
-/* function createTD3(x) {
-    const newTD = document.createElement('td');
-
-    const thirdRow = document.getElementById('third-row');
-
-    let content = document.createTextNode(x);
-
-    newTD.setAttribute('colspan', '5');
-
-    newTD.appendChild(content);
-    thirdRow.appendChild(newTD);
-} */
-
 function clear() {
     let node = document.getElementById("first-row");
     let nodeDois = document.getElementById("second-row");
-    // let nodeTres = document.getElementById("third-row");
 
-    while (node.hasChildNodes() && nodeDois.hasChildNodes()) { // && nodeTres.hasChildNodes()
+    while (node.hasChildNodes() && nodeDois.hasChildNodes()) {
         node.removeChild(node.lastChild);
         nodeDois.removeChild(nodeDois.lastChild);
-        // nodeTres.removeChild(nodeTres.lastChild);
     }
 }
